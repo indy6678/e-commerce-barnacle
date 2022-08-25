@@ -13,6 +13,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true
     },
+    // connect to product
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -20,6 +21,7 @@ ProductTag.init(
         key: 'id'
       }
     },
+    // connect to tag
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
